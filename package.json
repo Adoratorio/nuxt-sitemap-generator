@@ -1,6 +1,6 @@
 {
   "name": "@adoratorio/nuxt-sitemap-generator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A custom sitemap generator for Nuxt during prerender",
   "repository": "",
   "license": "MIT",
