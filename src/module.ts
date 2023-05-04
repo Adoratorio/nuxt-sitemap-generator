@@ -1,7 +1,7 @@
 import { defineNuxtModule, createResolver } from '@nuxt/kit'
 import fs from 'fs'
 import path from 'path';
-import * as colors from 'colorette';
+import { cyan } from 'colorette';
 
 export interface ModuleOptions {}
 
@@ -36,7 +36,7 @@ export default defineNuxtModule<ModuleOptions>({
 
       fs.writeFileSync(outputPath, layout.replace('{{ urls }}', sitemapString)); 
 
-      nitro.logger.success(`Generated sitemap: ${colors.cyan(outputPath)}`);
+      nitro.logger.success(`Generated sitemap: ${cyan(outputPath)}`);
     })
   }
 })
